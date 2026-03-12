@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    font-family: MuseoModerno, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    background: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Контейнеры */
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-sm { max-width: 600px; }
+.container-md { max-width: 800px; }
+
+/* Отступы */
+.m-0 { margin: 0; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+
+/* Выравнивание */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Flex */
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+.gap-10 { gap: 10px; }
+.gap-20 { gap: 20px; }
+
+/* Сетка */
+.grid { display: grid; }
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.gap-16 { gap: 16px; }
+
+/* Видимость */
+.hidden { display: none; }
+.visible { display: block; }

@@ -1,0 +1,98 @@
+:root {
+    --header-h: 90px;
+    --header-h-sm: 64px;
+}
+
+body {
+    padding-top: var(--header-h);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(258.05deg, #02265A -1.21%, #0A4EB1 39.4%, #02265A 96.42%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow .2s ease, backdrop-filter .2s ease, background .2s ease;
+    opacity: 0;
+    transform: translateY(-12px);
+}
+
+#header.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header {
+    min-height: var(--header-h);
+    margin-top: 0;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: min-height .2s ease, padding .2s ease;
+}
+
+#header.is-scrolled {
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+#header.is-scrolled .header {
+    min-height: var(--header-h-sm);
+    padding: 8px 0;
+}
+
+#header.is-scrolled .logo,
+#header.is-scrolled .logo img {
+    height: 46px;
+}
+
+.header-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    gap: 40px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+}
+
+.header-btns::-webkit-scrollbar {
+    display: none;
+}
+
+.header-btn {
+    flex: 0 0 auto;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease, opacity 0.3s ease;
+    border-bottom: 2px solid transparent;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+.header-btn:hover {
+    color: rgba(255, 255, 255, 0.85);
+    border-bottom-color: white;
+}
+
+#header.is-scrolled .header-btn {
+    color: #02265A;
+}
+
+#header.is-scrolled .header-btn:hover {
+    color: #0A4EB1;
+    border-bottom-color: #02265A;
+}
