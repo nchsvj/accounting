@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/animations.css">
 </head>
 <body>
 <header id="header">
@@ -26,16 +27,16 @@
 <section id="hero">
     <div class="hero container">
         <div class="hero-content">
-            <h1 class="hero-title">ПРОФЕССИОНАЛЬНОЕ БУХГАЛТЕРСКОЕ ОБСЛУЖИВАНИЕ ИП И ТОО В РК</h1>
-            <p class="hero-subtitle">БЕРЁМ НА СЕБЯ ВЕДЕНИЕ УЧЁТА, СДАЧУ НАЛОГОВОЙ ОТЧЁТНОСТИ И ВЗАИМОДЕЙСТВИЕ С ГОСУДАРСТВЕННЫМИ ОРГАНАМИ РК</p>
+            <h1 class="hero-title reveal reveal--title">ПРОФЕССИОНАЛЬНОЕ БУХГАЛТЕРСКОЕ ОБСЛУЖИВАНИЕ ИП И ТОО В РК</h1>
+            <p class="hero-subtitle reveal reveal--title">БЕРЁМ НА СЕБЯ ВЕДЕНИЕ УЧЁТА, СДАЧУ НАЛОГОВОЙ ОТЧЁТНОСТИ И ВЗАИМОДЕЙСТВИЕ С ГОСУДАРСТВЕННЫМИ ОРГАНАМИ РК</p>
 
-            <div class="hero-actions">
+            <div class="hero-actions reveal reveal--up">
                 <a href="wa.me/+77007803632" class="hero-btn hero-btn-primary">ОСТАВИТЬ ЗАЯВКУ</a>
                 <a href="wa.me/+77006803632" class="hero-btn hero-btn-secondary">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
             </div>
         </div>
 
-        <div class="hero-media">
+        <div class="hero-media reveal reveal--up">
             <div class="hero-media-shape">
                 <img src="content/banner-img.png" alt="Бухгалтерские услуги" class="hero-image">
             </div>
@@ -44,7 +45,7 @@
 </section>
 
 <main id="content">
-    <section class="content-1 container">
+    <section class="content-1 container reveal reveal--up">
         <h2 class="title-1">ПОЧЕМУ НАМ ДОВЕРЯЮТ:</h2>
 
         <div class="trust-block">
@@ -72,13 +73,13 @@
 
     <div id="uslugi"></div>
     <section class="content-2 container">
-        <div class="section-head">
+        <div class="section-head reveal reveal--title">
             <span class="section-line"></span>
             <h2 class="title-2">НАШИ УСЛУГИ</h2>
             <span class="section-line"></span>
         </div>
 
-        <div class="services-grid">
+        <div class="services-grid reveal reveal--zoom">
             <article class="service-card">
                 <h3 class="service-title">ВЕДЕНИЕ БУХГАЛТЕРСКОГО УЧЕТА</h3>
                 <ul class="service-list">
@@ -123,13 +124,13 @@
     </section>
 
     <section class="content-2 container">
-        <div class="section-head">
+        <div class="section-head reveal reveal--title">
             <span class="section-line"></span>
             <h2 class="title-2">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</h2>
             <span class="section-line"></span>
         </div>
 
-        <div class="extra-services">
+        <div class="extra-services reveal reveal--zoom">
             <div class="extra-service-card">
                 <div class="extra-service-title">РЕГИСТРАЦИЯ ИП</div>
                 <div class="extra-service-price">ОТ 15 000 ₸</div>
@@ -164,13 +165,13 @@
 
     <div id="tarif"></div>
     <section class="content-3 container">
-        <div class="section-head">
+        <div class="section-head reveal reveal--title">
             <span class="section-line"></span>
             <h2 class="title-2">ТАРИФЫ</h2>
             <span class="section-line"></span>
         </div>
 
-        <div class="price-cards">
+        <div class="price-cards reveal reveal--zoom">
             <div class="price-card">
                 <div class="price-card-title">ИП НА УПРОЩЁННОМ РЕЖИМЕ <br> (БЕЗ СОТРУДНИКОВ)</div>
                 <div class="price-card-price">от 100 000 ₸</div>
@@ -192,7 +193,7 @@
             </div>
         </div>
 
-        <div class="price-note">
+        <div class="price-note reveal reveal--fade">
             <span class="price-note-dot"></span>
             <p>ИТОГОВАЯ СТОИМОСТЬ ЗАВИСИТ ОТ КОЛИЧЕСТВА ОПЕРАЦИЙ, СОТРУДНИКОВ И НАЛИЧИЯ НДС.</p>
         </div>
@@ -238,5 +239,6 @@
 </footer>
 
 <script src="scripts/header.js"></script>
+<script src="scripts/animations.js"></script>
 </body>
 </html>
