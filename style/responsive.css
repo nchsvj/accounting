@@ -1,6 +1,6 @@
 @media (min-width:1280px){
     .container{
-        max-width:1200px;
+        max-width:1246px;
     }
 }
 
@@ -12,12 +12,6 @@
     /*.price-cards {*/
     /*    grid-template-columns: repeat(2, 1fr);*/
     /*}*/
-}
-
-@media (min-width:1024px){
-    .container{
-        max-width:1134px;
-    }
 }
 
 @media (max-width:1023px){
